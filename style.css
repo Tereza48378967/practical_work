@@ -18,6 +18,10 @@ body {
     padding-bottom: 20px;
 }
 
+main, section, article, aside, header, footer, nav {
+    display: block;
+}
+
 .container {
     max-width: 900px;
     margin: 0 auto;
@@ -91,6 +95,27 @@ body {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
 }
 
+.note-aside {
+    background-color: #fff5eb;
+    border-left: 4px solid #8b4513;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 0 6px 6px 0;
+}
+
+.note-aside h3 {
+    font-size: 18px;
+    color: #8b4513;
+    margin-bottom: 6px;
+}
+
+.note-aside p {
+    font-size: 14px;
+    font-style: italic;
+    color: #5c4033;
+    margin-bottom: 0;
+}
+
 .relative-card {
     position: relative;
 }
@@ -149,8 +174,21 @@ body {
     transform: translateY(-3px);
 }
 
+.site-footer {
+    background-color: #3b2720;
+    color: #f3d5b5;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin-bottom: 5px;
+}
+
 #page-title, h1 {
-    font-size: 32px;
+    font-size: 28px;
     font-weight: 700;
     color: #6b2d2d;
     margin-bottom: 15px;
@@ -158,14 +196,14 @@ body {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     color: #7b3f00;
     margin-bottom: 12px;
 }
 
 h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     color: #8b4513;
     margin-bottom: 10px;

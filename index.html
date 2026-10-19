@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Рецепт тирамісу</title>
+    
+    <title>Рецепт тирамісу — Покрокове приготування класичного десерту</title>
+    <meta name="description" content="Рецепт класичного італійського тирамісу з ніжним кремом маскарпоне, печивом савоярді та запашною кавою. Покрокові інструкції та секрети ідеального смаку.">
+    <meta name="keywords" content="тирамісу, рецепт тирамісу, італійський десерт, маскарпоне, савоярді, кавовий десерт, домашній рецепт">
+    <meta name="author" content="Ваше Прізвище та Ім'я">
+    
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3142/3142784.png" type="image/x-icon">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,7 +18,7 @@
     <header class="site-header" id="main-header">
         <div class="header-container">
             <div class="logo">🍰 Tiramisu Lab</div>
-            <nav class="nav-menu">
+            <nav class="nav-menu" aria-label="Головне меню сайту">
                 <ul>
                     <li><a href="#about">Про тему</a></li>
                     <li><a href="#recipe">Рецепт</a></li>
@@ -22,17 +29,18 @@
         </div>
     </header>
 
-    <div class="container">
+    <main id="main-content" class="container">
+
         <section id="about" class="section-block">
-            <div class="card">
-                <h1 id="page-title" class="section-title">Рецепт тирамісу</h1>
+            <article class="card">
+                <h2 id="page-title" class="section-title">Класичний італійський десерт тирамісу</h2>
                 <img src="https://www.giallozafferano.com/images/260-26067/Tiramisu_780x520_wm.jpg"
-                     alt="Головне фото тирамісу" class="main-img">
-            </div>
+                     alt="Порція класичного тирамісу з посипкою какао на білій тарілці" class="main-img">
+            </article>
         </section>
 
-      
-            <div class="card relative-card">
+        <section id="recipe" class="section-block">
+            <article class="card relative-card">
                 <span class="badge">ХІТ</span>
 
                 <h2 class="section-title">Складові та приготування</h2>
@@ -55,11 +63,18 @@
                     <li>Савоярді швидко вмочувати в каву й викладати шарами з кремом.</li>
                     <li>Посипати какао та поставити в холодильник на 4–6 годин.</li>
                 </ol>
-            </div>
+
+                <aside class="note-aside">
+                    <h3>Корисна порада</h3>
+                    <p>
+                        Савоярді потрібно занурювати в каву буквально на 1 секунду. Якщо печиво перебуде в рідині довше, воно розмокне і десерт втратить необхідну форму.
+                    </p>
+                </aside>
+            </article>
         </section>
 
         <section id="nutrition" class="section-block">
-            <div class="card">
+            <article class="card">
                 <h2 class="section-title">Харчова цінність та пропорції</h2>
                 <table>
                     <thead>
@@ -93,15 +108,15 @@
                     Секрет ідеального тірамісу — у ніжному кремі, якісному маскарпоне
                     та добре охолодженій міцній каві.
                 </p>
-                <a href="https://youtu.be/7VTtenyKRg4?si=c27UDORsi81wR0mv" target="_blank">
+                <a href="https://youtu.be/7VTtenyKRg4?si=c27UDORsi81wR0mv" target="_blank" rel="noopener noreferrer">
                     Переглянути відеоурок
                 </a>
-            </div>
+            </article>
         </section>
 
         <section id="gallery" class="section-block">
-            <div class="card">
-                <h3 class="section-title">Галерея десертів</h3>
+            <article class="card">
+                <h2 class="section-title">Галерея десертів</h2>
                 <p>
                     Обирайте саме наш рецепт, якщо хочете отримати ніжний, повітряний
                     і по-справжньому смачний тірамісу без зайвих складнощів.
@@ -111,18 +126,25 @@
 
                 <div class="grid-gallery">
                     <img src="https://images.ctfassets.net/0e6jqcgsrcye/4n65BLblai3S8LPjwpHKMm/b31817cdecfe982fe798642d1c12d525/tiramisu_thumbnail.jpg"
-                         alt="Фото тирамісу 1">
+                         alt="Шматочок тирамісу у розрізі з чіткими шарами крему та печива">
                     <img src="https://www.cookingclassy.com/wp-content/uploads/2022/08/tiramisu-17-600x900.jpg" 
-                         alt="Фото тирамісу 2">
+                         alt="Вигляд приготовленого тирамісу зверху у скляній формі для випікання">
                     <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/tiramisu_affogato_41821_16x9.jpg"
-                         alt="Фото тирамісу 3">
+                         alt="Десерт тирамісу, поданий у скляному прозорому келиху">
                 </div>
-            </div>
+            </article>
         </section>
 
-    </div>
+    </main>
 
-    <a href="#main-header" class="scroll-to-top" title="Нагору">↑</a>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 Tiramisu Lab. Автор проєкту: Студент Навчальної Групи.</p>
+            <p>Дисципліна: Веб-розробка та верстка (ПР №2/3). Контакти: student@example.com</p>
+        </div>
+    </footer>
+
+    <a href="#main-header" class="scroll-to-top" aria-label="Повернутися на початок сторінки" title="Нагору">↑</a>
 
 </body>
 </html>
