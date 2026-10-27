@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Рецепт тирамісу — Покрокове приготування класичного десерту</title>
+    <title>Рецепт тирамісу</title>
     <meta name="description" content="Рецепт класичного італійського тирамісу з ніжним кремом маскарпоне, печивом савоярді та запашною кавою. Покрокові інструкції та секрети ідеального смаку.">
     <meta name="keywords" content="тирамісу, рецепт тирамісу, італійський десерт, маскарпоне, савоярді, кавовий десерт, домашній рецепт">
-    <meta name="author" content="Ваше Прізвище та Ім'я">
+    <meta name="author" content="Студентка КІПЗс-25-3">
     
     <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3142/3142784.png" type="image/x-icon">
     
@@ -24,6 +24,7 @@
                     <li><a href="#recipe">Рецепт</a></li>
                     <li><a href="#nutrition">Харчова цінність</a></li>
                     <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#contact">Зворотний зв'язок</a></li>
                 </ul>
             </nav>
         </div>
@@ -105,7 +106,7 @@
 
                 <br>
                 <p>
-                    Секрет ідеального тірамісу — у ніжному кремі, якісному маскарпоне
+                    Секрет ідеального тирамісу — у ніжному кремі, якісному маскарпоне
                     та добре охолодженій міцній каві.
                 </p>
                 <a href="https://youtu.be/7VTtenyKRg4?si=c27UDORsi81wR0mv" target="_blank" rel="noopener noreferrer">
@@ -119,7 +120,7 @@
                 <h2 class="section-title">Галерея десертів</h2>
                 <p>
                     Обирайте саме наш рецепт, якщо хочете отримати ніжний, повітряний
-                    і по-справжньому смачний тірамісу без зайвих складнощів.
+                    і по-справжньому смачний тирамісу без зайвих складнощів.
                 </p>
 
                 <em class="highlight">Обіцяємо вам такі результати:</em>
@@ -135,6 +136,70 @@
             </article>
         </section>
 
+        <section id="contact" class="section-block">
+            <article class="card">
+                <h2 class="section-title">Зворотний зв'язок</h2>
+                <p>Маєте запитання чи хочете поділитися враженнями від рецепту? Напишіть нам!</p>
+
+                <form action="#" method="POST" class="feedback-form">
+                    
+                    <div class="form-group">
+                        <label for="user-name">Ваше ім'я:</label>
+                        <input type="text" id="user-name" name="user_name" placeholder="Олександр" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-email">Електронна пошта:</label>
+                        <input type="email" id="user-email" name="user_email" placeholder="example@gmail.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="user-phone">Номер телефону:</label>
+                        <input type="tel" id="user-phone" name="user_phone" placeholder="+380XXXXXXXXX" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема звернення:</label>
+                        <select id="subject" name="subject">
+                            <option value="" disabled selected>--- Оберіть варіант ---</option>
+                            <option value="question">Запитання по рецепту</option>
+                            <option value="feedback">Відгук про десерт</option>
+                            <option value="cooperation">Пропозиція співпраці</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Ваше повідомлення:</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Опишіть свої враження чи запитання..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <span class="group-label">Бажаний спосіб зв'язку:</span>
+                        <div class="radio-group">
+                            <label for="contact-email" class="radio-label">
+                                <input type="radio" id="contact-email" name="contact_method" value="email" checked>
+                                Надіслати лист на Email
+                            </label>
+                            <label for="contact-phone" class="radio-label">
+                                <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                                Зателефонувати
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <label for="terms" class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            Я погоджуюсь на обробку персональних даних
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Надіслати повідомлення</button>
+
+                </form>
+            </article>
+        </section>
+
     </main>
 
     <footer class="site-footer">
@@ -144,7 +209,7 @@
         </div>
     </footer>
 
-    <a href="#main-header" class="scroll-to-top" aria-label="Повернутися на початок сторінки" title="Нагору">↑</a>
+    <a href="#" class="scroll-to-top" aria-label="Повернутися на початок сторінки" title="Нагору">↑</a>
 
 </body>
 </html>

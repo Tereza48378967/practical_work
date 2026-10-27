@@ -18,7 +18,7 @@ body {
     padding-bottom: 20px;
 }
 
-main, section, article, aside, header, footer, nav {
+main, section, article, aside, header, footer, nav, form {
     display: block;
 }
 
@@ -56,7 +56,7 @@ main, section, article, aside, header, footer, nav {
 
 .nav-menu ul {
     display: flex;
-    gap: 20px;
+    gap: 15px;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -66,10 +66,10 @@ main, section, article, aside, header, footer, nav {
     color: #6b2d2d;
     text-decoration: none;
     font-weight: 600;
-    padding: 6px 12px;
+    padding: 6px 10px;
     border-radius: 4px;
     transition: background-color 0.2s, color 0.2s;
-    margin-top: 0;
+    font-size: 15px;
 }
 
 .nav-menu a:hover {
@@ -114,6 +114,112 @@ main, section, article, aside, header, footer, nav {
     font-style: italic;
     color: #5c4033;
     margin-bottom: 0;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 20px auto 0;
+    padding: 25px;
+    background-color: #fffcf8;
+    border: 1px solid #e0b080;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label,
+.group-label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #3b2720;
+    font-size: 15px;
+}
+
+.feedback-form input[type="text"],
+.feedback-form input[type="email"],
+.feedback-form input[type="tel"],
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    color: #3b2720;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.feedback-form textarea {
+    resize: vertical;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form input[type="email"]:focus,
+.feedback-form input[type="tel"]:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #8b4513;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.2);
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 4px;
+}
+
+.radio-label,
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 14px;
+    color: #5c4033;
+}
+
+.radio-label input[type="radio"],
+.checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    accent-color: #8b4513;
+}
+
+.checkbox-group {
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+
+/* Кнопка відправлення */
+.submit-btn {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #6b2d2d;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: #8b4513;
+}
+
+.submit-btn:active {
+    transform: scale(0.99);
 }
 
 .relative-card {
@@ -164,7 +270,7 @@ main, section, article, aside, header, footer, nav {
     font-size: 20px;
     font-weight: bold;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    z-index: 999;
+    z-index: 9999;
     transition: background-color 0.2s, transform 0.2s;
 }
 
@@ -260,17 +366,10 @@ ul, ol {
     color: #5c4033;
 }
 
-ul {
-    list-style-type: square;
-}
+ul { list-style-type: square; }
+ol { list-style-type: decimal; }
 
-ol {
-    list-style-type: decimal;
-}
-
-li {
-    margin-bottom: 8px;
-}
+li { margin-bottom: 8px; }
 
 table {
     width: 100%;
